@@ -41,7 +41,8 @@ namespace TodoListProject.TodoApp
 
         public void SetItemStatus(int id, bool isCompleted)
         {
-
+            TodoItem tempItem = Items.Where(item => item.Id == id).FirstOrDefault();
+            tempItem.IsCompleted = isCompleted;
         }
 
         public void Print()
