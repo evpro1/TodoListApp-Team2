@@ -11,12 +11,14 @@ namespace TodoListProject.TodoApp
         public int Id { get; set; }
         public string TextDesc { get; set; }
         public bool IsCompleted { get; set; }
+        public DateTime DueDate { get; set; }
 
-        public TodoItem(int newId, string newTextDesc)
+        public TodoItem(int newId, string newTextDesc, DateTime newDueDate)
         {
             Id = newId;
             TextDesc = newTextDesc;
             IsCompleted = false;
+            DueDate = newDueDate;
         }
 
         public override string ToString()
