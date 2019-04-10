@@ -9,12 +9,12 @@ namespace TodoListProject
 {
     public class Program
     {
-        public static TodoList todoList = new TodoList();
+        public static TodoList TodoList { get; set; }
 
         static void Main(string[] args)
         {
             bool exit = false;
-            
+            TodoList = new TodoList();
             do
             {
                 ShowMenu();
@@ -47,12 +47,12 @@ namespace TodoListProject
             {
                 case 1:
                     Console.WriteLine("1");
-                    todoList.Print();
+                    TodoList.Print();
                     break;
 
                 case 2:
                     Console.WriteLine("2");
-
+                    
                     break;
 
                 case 3:
