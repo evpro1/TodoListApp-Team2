@@ -11,10 +11,10 @@ namespace TodoListProject.TodoApp
         public List<TodoItem> Items { get; set; }
         private int runningId = 0;
 
-        public void AddNewItem(string newTextDesc)
+        public void AddNewItem(string newTextDesc, DateTime newDueDate)
         {
             runningId++;
-            Items.Add(new TodoItem(runningId, newTextDesc));
+            Items.Add(new TodoItem(runningId, newTextDesc, newDueDate));
         }
 
         public void RemoveItem(int id)
