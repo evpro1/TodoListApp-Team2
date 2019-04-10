@@ -51,11 +51,9 @@ namespace TodoListProject
                     break;
 
                 case 2:
-                    Console.WriteLine("Enter text description for new item");
+                    Console.WriteLine("Enter text description for new item, default is 3 days due date");
                     string newText = Console.ReadLine();
-
-                    //int input;
-                    //bool canParse = Int32.TryParse(Console.ReadLine(), out input);
+                    TodoList.AddNewItem(newText);
 
                     break;
 
