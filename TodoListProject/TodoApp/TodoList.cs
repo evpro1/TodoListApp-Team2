@@ -22,10 +22,11 @@ namespace TodoListProject.TodoApp
             AddNewItem(newTextDesc, newDueDate);
         }
 
-        public void AddNewItem(string newTextDesc, DateTime newDueDate)
+        public int AddNewItem(string newTextDesc, DateTime newDueDate)
         {
             runningId++;
             Items.Add(new TodoItem(runningId, newTextDesc, newDueDate));
+            return runningId;
         }
 
         public void RemoveItem(int id)

@@ -72,7 +72,18 @@ namespace TodoListProject
                     break;
 
                 case 4:
-                    
+                    Console.WriteLine("Enter id of item to mark as complete");
+                    canParse = Int32.TryParse(Console.ReadLine(), out input);
+
+                    if (canParse)
+                    {
+                        TodoList.RemoveItem(input);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Incorrect input");
+                    }
+
                     break;
 
                 case 9:
