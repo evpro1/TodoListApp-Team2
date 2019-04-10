@@ -25,18 +25,22 @@ namespace TodoListTestProject
 
             Assert.IsTrue(found);
         }
+
         [TestMethod]
         public void TestRetrieveItemList()
         {
         }
+
         [TestMethod]
         public void TestRemoveItem()
         {
         }
+
         [TestMethod]
         public void TestCompleteItem()
         {
         }
+
         [TestMethod]
         public void TestAddNewItemWithDueDate()
         {
