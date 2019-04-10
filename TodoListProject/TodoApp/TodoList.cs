@@ -28,9 +28,16 @@ namespace TodoListProject.TodoApp
 
         public void Print()
         {
-            foreach(TodoItem item in Items)
+            if (Items.Count > 0)
             {
-                Console.WriteLine(item);
+                foreach (TodoItem item in Items)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            else
+            {
+                Console.WriteLine("No item in to do list");
             }
         }
     }

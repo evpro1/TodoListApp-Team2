@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TodoListProject.TodoApp;
 
 namespace TodoListProject
 {
-    class Program
+    public class Program
     {
+        public static TodoList todoList = new TodoList();
+
         static void Main(string[] args)
         {
             bool exit = false;
+            
             do
             {
                 ShowMenu();
@@ -43,11 +47,12 @@ namespace TodoListProject
             {
                 case 1:
                     Console.WriteLine("1");
-
+                    todoList.Print();
                     break;
 
                 case 2:
                     Console.WriteLine("2");
+
                     break;
 
                 case 3:
