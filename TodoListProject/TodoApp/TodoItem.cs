@@ -18,5 +18,10 @@ namespace TodoListProject.TodoApp
             TextDesc = newTextDesc;
             IsCompleted = false;
         }
+
+        public override string ToString()
+        {
+            return "Item:"+ Id +") "+TextDesc+" - Is completed: "+ IsCompleted;
+        }
     }
 }

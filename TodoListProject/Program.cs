@@ -43,6 +43,7 @@ namespace TodoListProject
             {
                 case 1:
                     Console.WriteLine("1");
+
                     break;
 
                 case 2:
