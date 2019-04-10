@@ -21,6 +21,12 @@ namespace TodoListProject.TodoApp
             DueDate = newDueDate;
         }
 
+        public override bool Equals(object obj)
+        {
+            TodoItem other = (TodoItem)obj;
+
+            return this.TextDesc.Equals(other.TextDesc);
+        }
         public override string ToString()
         {
             return "Item:"+ Id +") "+TextDesc+" - Is completed: "+ IsCompleted;
