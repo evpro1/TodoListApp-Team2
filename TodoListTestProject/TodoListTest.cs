@@ -25,21 +25,39 @@ namespace TodoListTestProject
 
             Assert.IsTrue(found);
         }
+
         [TestMethod]
-        public void TestShowItemList()
+        public void TestRetrieveItemList()
         {
         }
+
         [TestMethod]
         public void TestRemoveItem()
         {
         }
+
         [TestMethod]
         public void TestCompleteItem()
         {
         }
+
         [TestMethod]
         public void TestAddNewItemWithDueDate()
         {
+            TodoList list = new TodoList();
+            list.AddNewItem("Test1", new DateTime(2019,4,11));
+
+            bool found = false;
+            foreach (TodoItem item in list.Items)
+            {
+                if (item.TextDesc.CompareTo("Test1") == 0 && item.DueDate == new DateTime(2019, 4, 11))
+                {
+                    found = true;
+                    break;
+                }
+            }
+
+            Assert.IsTrue(found);
         }
     }
 }
