@@ -8,5 +8,17 @@ namespace TodoListProject.TodoApp
 {
     public class TodoList
     {
+        public List<TodoItem> Items { get; set; }
+        private int runningId = 0;
+
+        public void AddNewItem()
+        {
+            
+        }
+
+        public void SetItemStatus(int id, bool isCompleted)
+        {
+
+        }
     }
 }
