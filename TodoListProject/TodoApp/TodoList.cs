@@ -30,6 +30,12 @@ namespace TodoListProject.TodoApp
 
         public void RemoveItem(int id)
         {
+            TodoItem tempItem = Items.Where(item => item.Id == id).FirstOrDefault();
+
+            if(tempItem!=null)
+            {
+                Items.Remove(tempItem);
+            }
         }
 
         public void SetItemStatus(int id, bool isCompleted)

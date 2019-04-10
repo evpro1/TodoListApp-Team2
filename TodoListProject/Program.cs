@@ -25,8 +25,7 @@ namespace TodoListProject
 
         public static void ShowMenu()
         {
-            Console.WriteLine("Welcome to To Do List Application!!!!");
-            //ShowCurrentList();
+            Console.WriteLine("\nWelcome to To Do List Application");
             Console.WriteLine("\nMenu: ");
             Console.WriteLine("1. List all to do items");
             Console.WriteLine("2. Add new item");
@@ -58,7 +57,22 @@ namespace TodoListProject
                     break;
 
                 case 3:
-                    Console.WriteLine("3");
+                    Console.WriteLine("Enter id of item to remove");
+                    canParse = Int32.TryParse(Console.ReadLine(), out input);
+
+                    if (canParse)
+                    {
+                        TodoList.RemoveItem(input);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Incorrect input");
+                    }
+
+                    break;
+
+                case 4:
+                    
                     break;
 
                 case 9:
@@ -71,20 +85,6 @@ namespace TodoListProject
             }
 
             return input;
-        }
-
-        public static void ShowCurrentList()
-        {
-            List<String> list = new List<String>();
-            list.Add("Fix bug no 1");
-            list.Add("Fix bug no 2");
-            list.Add("Fix bug no 3");
-
-            foreach (String s in list)
-            {
-                Console.WriteLine(s);
-            }
-
         }
     }
 }
