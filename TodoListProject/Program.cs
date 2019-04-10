@@ -26,14 +26,14 @@ namespace TodoListProject
         public static void ShowMenu()
         {
             Console.WriteLine("Welcome to To Do List Application!!!!");
-            ShowCurrentList();
-            Console.WriteLine("Menu: ");
+            //ShowCurrentList();
+            Console.WriteLine("\nMenu: ");
             Console.WriteLine("1. List all to do items");
             Console.WriteLine("2. Add new item");
             Console.WriteLine("3. Delete an item");
             Console.WriteLine("4. Mark an item as complete");
             Console.WriteLine("9. Quit");
-            Console.WriteLine("Enter your choice: ");
+            Console.WriteLine("\nEnter your choice: ");
         }
 
         public static int ReadInput()
