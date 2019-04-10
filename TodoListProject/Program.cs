@@ -21,7 +21,7 @@ namespace TodoListProject
 
         public static void ShowMenu()
         {
-            Console.WriteLine("Welcome to To Do List Applicatio");
+            Console.WriteLine("Welcome to To Do List Application!!!!");
             ShowCurrentList();
             Console.WriteLine("Menu: ");
             Console.WriteLine("1. List all to do list");
