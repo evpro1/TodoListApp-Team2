@@ -77,7 +77,7 @@ namespace TodoListProject
 
                     if (canParse)
                     {
-                        TodoList.RemoveItem(input);
+                        TodoList.SetItemStatus(input, true);
                     }
                     else
                     {
