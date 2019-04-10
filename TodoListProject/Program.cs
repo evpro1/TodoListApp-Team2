@@ -28,7 +28,7 @@ namespace TodoListProject
             Console.WriteLine("Welcome to To Do List Application!!!!");
             ShowCurrentList();
             Console.WriteLine("Menu: ");
-            Console.WriteLine("1. List all to do list");
+            Console.WriteLine("1. List all to do items");
             Console.WriteLine("2. Add new item");
             Console.WriteLine("3. Delete an item");
             Console.WriteLine("4. Mark an item as complete");
@@ -46,13 +46,17 @@ namespace TodoListProject
             switch (input)
             {
                 case 1:
-                    Console.WriteLine("1");
+                    Console.WriteLine("The items in the list are:");
                     TodoList.Print();
                     break;
 
                 case 2:
-                    Console.WriteLine("2");
-                    
+                    Console.WriteLine("Enter text description for new item");
+                    string newText = Console.ReadLine();
+
+                    //int input;
+                    //bool canParse = Int32.TryParse(Console.ReadLine(), out input);
+
                     break;
 
                 case 3:
