@@ -39,7 +39,7 @@ namespace TodoListTestProject
             expected.Add(new TodoItem(id1, "Test1", new DateTime(2019,4,11)));
             expected.Add(new TodoItem(id2, "Test2", new DateTime(2019,4,13)));
 
-            CollectionAssert.AreEquivalent(expected, list.Items);
+            CollectionAssert.AreEqual(expected, list.Items);
         }
 
         [TestMethod]
